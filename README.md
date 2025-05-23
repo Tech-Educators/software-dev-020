@@ -2,10 +2,10 @@
 
 A collection of all the demos and guides we we will use during the software development course.
 
-### demos
+### Demos
 
 Demo code from class
 
-### guides
+### Guides
 
 Guides to reference on different topics
