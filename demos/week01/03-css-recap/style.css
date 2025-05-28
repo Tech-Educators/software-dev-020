@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Combo&display=swap');
+
+p {
+    font-family: "Combo", serif;
+    color: black;
+}
+
+
+/* Go to google fonts website */
+/* Once you find a font you like, hit get font button */
+/* hit the 'get embed code button */
+/* on the 'web' tab, change the selction from <link> to '@import" */
+/* just copy the @import line - ignore the <style> tags around it */
+/* paste that at the top of your css file */
+/* you can find the font family name on the page - and copy it eg  font-family: "Combo", system-ui; */

@@ -1,0 +1,66 @@
+/* This is were I'll be doing all of my styling for the webpage */
+
+/* There are a couple of different selectors:  */
+/* We'll start with the Element Selector */
+
+body {
+    background-color: tomato;
+}
+
+li {
+    color: white;
+}
+
+/* Class selector - find any elements with the class attribute of 'fancy-text' */
+.fancy-text {
+   font-family: fantasy; 
+   font-size: 32px;
+   color:cornflowerblue;
+}
+
+/* when we're targeting a class or element, it's sometimes called a ruleset - everything between the {}'s */
+
+
+/* We can select multiple elements at once */
+
+h2, marquee {
+  color: purple;
+  font-family: monospace;  
+  font-size: 20px;
+}
+
+
+/* Selecting decendents of other elemenths */
+
+.cool-section > p {
+    background-color: burlywood;
+} 
+
+
+/* Psudo selectors */
+.fancy-text:hover {
+    color: red;
+    font-size: 50px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.cta-button {
+ height: 80px;
+ width: 80px;
+ text-decoration: none;
+ color: white;
+ border: 2px solid white;
+ padding: 8px;
+ background-color: transparent;
+ margin: 20px;
+}
+
+.cta-button:hover {
+    background-color: white;
+    color: black;
+}
+/* to select an ID instead of a class */
+#footer {
+    background-color: black;
+}
