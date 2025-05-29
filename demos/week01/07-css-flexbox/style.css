@@ -1,0 +1,32 @@
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.box {height: 100px; width: 100px;}
+.one {background-color: #A4243B;}
+.two {background-color: #d8c99b;}
+.three{background-color: #D8973C;}
+.four{background-color: #BD632F;}
+.five{background-color: #273E47;}
