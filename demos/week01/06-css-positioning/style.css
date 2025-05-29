@@ -1,0 +1,90 @@
+.box {
+    height: 150px;
+    width: 150px;
+    background-color: grey;
+    font-family: monospace;
+    font-size: 26px;
+}
+/* all elements have position static by default */
+.static {
+    position: static;
+}
+
+/* some of the postion properties remove the element from normal document flow. */
+.absolute {
+    position: absolute;
+
+    /* because thisn't static anymore, I can add top/left/bottom/right propterties */
+    left: 360px;
+    top: 30px;
+}
+
+/* not removed from the normal document flow aka not sent to the shadow realm, and it's top/left/bottom/righ are relative to it's original position. */
+.relative {
+    position: relative;
+    left: 360px;
+    top: 30px;
+}
+
+/* doesn't get removed frmo the document flow */
+/* basically static until we reach the threshhold scrolling past the element - it becomes 'stuck' to the top of the screen */
+.sticky {
+    position: sticky    ;
+    top: 30px;
+} 
+
+/* takes the elment out of the normal document flow */
+/* stuck in place at whatever cooodinates you give it! */
+.fixed {
+    position: fixed;
+    top: 0px;
+}
+
+.parent {
+    position: relative;
+    top:30px;
+    left: 20px;
+}
+
+/*  any element with positon absolute will positon itself accorind to either the whole document or it's first parent with a position property *not* set to static.*/
+.child {
+    position: absolute;
+}
+
+parent > child 
+relative > absolute
+
+
+
+
+
+
+
+
+
+
+
+.tree {
+    background-image: url('https://images.unsplash.com/photo-1482148454461-aaedae4b30bb?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+}
+
+.america {
+    background-image: url('https://images.unsplash.com/photo-1498855926480-d98e83099315?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+}
+
+.beach {
+    background-image: url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21?q=80&w=2788&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+}
+
+.snow {
+    background-image: url('https://images.unsplash.com/photo-1418985991508-e47386d96a71?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+}
+
+.flower {
+    background-image: url('https://images.unsplash.com/photo-1618468355232-88a329df0182?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+}
