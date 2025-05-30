@@ -1,0 +1,13 @@
+
+.feature {
+    height: 100vh;
+    background-size: cover;
+}
+
+.cta-box {
+
+}
+.crane {
+    background-color: red;
+    background-image: url('./images/cranes.jpg');
+}
