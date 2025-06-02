@@ -103,9 +103,9 @@ console.log(typeof coolNumber) // number
 // difference between using const and let when declaring variables
 
 let myAge = 26;
-console.log(myAge)
+console.log(myAge);
 myAge = 27 // once I've created the varaible I can change it. I don't need to use 'let' again, because it's already been created.
-console.log(myAge)
+console.log(myAge);
 
 
 // const should be used for varaible we won't be changing 
