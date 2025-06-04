@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+
+    /* can also use px values and percent values if you want */
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    gap: 20px;
+}
+
+header {
+    padding: 30px;
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+    width: 100%;
+    background-color: tomato;
+}
+
+main {
+    background-color: aqua;
+
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+footer {
+    grid-column: 2 / 4;
+    grid-row: 3 /4;
+}
