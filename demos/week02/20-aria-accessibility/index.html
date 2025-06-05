@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 1. Just use semantic elements  -->
+    <!-- 2. Don't add aria-lables just because you can -->
+    <!-- 3. Don't add aria-lables to static content (are you changing the text content of an element based on user input) -->
+
+    <a href="https://google.com" aria-label="Go to google.com search page">Search</a>
+
+    <!-- To enable tabing, add an tabindex=0 attribute -->
+    <img src="https://assets3.thrillist.com/v1/image/2559824/792x594/scale;webp=auto;jpeg_quality=60.jpg" alt="An otter at rest" tabindex="0">
+
+    <!-- Aria - live - tells araia to watch the element it's put on - if the content of that element chages it will read it out. There are two options "assertive" and "polite" - polite will wait till it finished speaking, and "assertive" will intrupt itself -->
+    <div id="notificationArea" aria-live="assertive"> No new notifcations</div>
+    <button id="notificationButton">Generate notification</button>
+
+    <!-- This will make sure screen readers dont readout the element at all -->
+    <button aria-hidden="true">I dont do anything!</button>
+</body>
+</html>
