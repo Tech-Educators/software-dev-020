@@ -1,0 +1,54 @@
+span {
+    padding-left: 10px;
+}
+
+html {
+    font-size: 8px
+}
+
+body {
+    background-color: tomato;
+    color:white;
+    font-family: monospace;
+
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.box {
+    height: 500px;
+    width: 500px;
+    background-color: aliceblue;
+}
+
+/* screen size is above 300px and below 900px */
+
+@media (min-width: 300px) and (max-width: 900px) {
+    body {
+        background-color: green;
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
+}
+
+/* EM is a standard messurement in css - it comes from m's in the printing press */
+/* 1 em is 16px */
+
+/* REM is relative EM */
+
+/* If i change the bodies font-size to for example 6px - then one rem is 6px and 2 rem is 12px */
+
+
+@media (300px <= width <= 900px) {
+    .box {
+        width: 50vw;
+    }
+}
