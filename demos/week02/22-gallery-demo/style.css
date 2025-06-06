@@ -1,0 +1,10 @@
+.thumbnailContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+
+img {
+    height: 20vh;
+    width: auto;
+}
