@@ -1,0 +1,21 @@
+.image-container {
+    background-color: blanchedalmond;
+    height: 300px;
+    width: 300px;
+    position: relative;
+}
+
+h2 {
+    color: white;
+    font-size: 32px;
+    padding: 30px;
+    font-family: fantasy;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+}
