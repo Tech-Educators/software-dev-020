@@ -38,6 +38,11 @@ app.get("/owls", (request, response) => {
   response.json(owls);
 });
 
+// POST endpoint
+app.post("/owls", (request, response) => {
+  response.json("This is the POST endpoint of /owls");
+});
+
 // endpoints can have as much functionality as you like
 app.get("/random", (request, response) => {
   const randomNumber = Math.random(); // 0.4322
