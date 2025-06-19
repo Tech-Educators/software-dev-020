@@ -10,6 +10,7 @@ async function fetchJokes() {
 
 // display jokes
 async function displayJokes() {
+  app.innerHTML = '';
   const jokes = await fetchJokes()
 
   jokes.forEach((singleJoke) => {
@@ -28,3 +29,27 @@ async function displayJokes() {
 }
 
 displayJokes()
+
+// post the form data
+
+// 1. get the form
+
+const form = document.getElementById('form')
+
+form.addEventListener('submit', async (event) => {
+  event.preventDefault()
+
+  // setup form data object
+  const formData = new FormData(form)
+  const jokeData = Object.fromEntries(formData)
+
+  // send the data to the server
+  const res = await fetch(`http://localhost:4242/jokes`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    }, 
+    body: JSON.stringify(jokeData)
+  })
+    displayJokes()
+})
