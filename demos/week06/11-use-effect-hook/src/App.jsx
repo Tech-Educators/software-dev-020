@@ -3,6 +3,7 @@ import { useState } from "react"
 
 export default function App() {
   const [state, setState] = useState(false)
+  const [todos, setTodos] = useState([])
 
 
   // use effect takes a function as the first argument - what is the code you want to run
@@ -14,7 +15,7 @@ export default function App() {
     async function fetchData() {
       const res = await fetch(`https://jsonplaceholder.typicode.com/todos`)
       const todos = await res.json()
-      console.log(todos)
+      setTodos(todos)
     }
 
     fetchData()
@@ -25,6 +26,9 @@ export default function App() {
   return (
     <div>
       <button onClick={() => setState(!state)}>Click me to re-render compoennt</button>
+      {todos.map((todo) => (
+        <p key={todo.id}>{todo.title}</p>
+      ))}
     </div>
   )
 }
