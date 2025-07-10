@@ -7,11 +7,17 @@ export default function Animals() {
     useEffect(() => {
         console.log('useEffect running')
         async function fetchData() {
+            console.log('fetching animal data')
             const res = await fetch(`http://localhost:8080/animals`)
             const animalsRes = await res.json()
             seetAnimals(animalsRes)
         }
         fetchData()
+        const intervalID = setInterval(fetchData, 5000) 
+
+        return () => {
+            clearInterval(intervalID)
+        }
     }, [])
 
     return (
