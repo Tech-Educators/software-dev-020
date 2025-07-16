@@ -1,0 +1,14 @@
+/* we have to use classes */
+
+.text {
+    font-family: fantasy;
+    color: tomato;
+    font-size: 2rem;
+}
+
+.box {
+    height: 100px;
+    width: 200px;
+    background: #EEAECA;
+    background: radial-gradient(circle,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
