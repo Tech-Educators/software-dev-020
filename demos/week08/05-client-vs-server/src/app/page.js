@@ -2,6 +2,7 @@ import ServerComponent from "@/components/ServerComponent"
 import ClientComponent from "@/components/ClientComponent"
 import Example from "@/components/Example"
 import ClientComponentThatTakesChildren from "@/components/ClientComponentThatTakesChildren"
+import Search from "@/components/FormAction"
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         {/* using a server component as a child prop is totally fine - it won't turn into a client component */}
         <Example />
       </ClientComponentThatTakesChildren>
+      <Search />
     </div>
   )
 }
