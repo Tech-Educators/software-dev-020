@@ -31,13 +31,13 @@ export default async function Page() {
         {books.map((book) => {
           return book.img_url ? (
             <Link href={`/books/${book.id}`} key={book.id}>
-                <Image
-                  className={"p-4 hover:scale-110"}
-                  src={book.img_url}
-                  width={200}
-                  height={300}
-                  alt={book.title}
-                />
+              <Image
+                className={"p-4 hover:scale-110"}
+                src={book.img_url}
+                width={200}
+                height={300}
+                alt={book.title}
+              />
             </Link>
           ) : (
             ""
