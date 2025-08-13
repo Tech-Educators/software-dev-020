@@ -2,9 +2,9 @@
 import { useTheme } from "@/context/ThemeContext"
 
 export default function UserComponent() {
-    const {theme} = useTheme()
+    // const {theme} = useTheme()
     return (
-        <div className={theme}>
+        <div className={''}>
             <h2>All about the user</h2>
         </div>
     )

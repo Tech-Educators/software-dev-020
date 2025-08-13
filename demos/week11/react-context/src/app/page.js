@@ -6,13 +6,15 @@ import UserComponent from "@/components/UserComponent"
 export default function Page() {
 
   // useTheme returns an object so just destructuing that
-  const {theme, setTheme} = useTheme()
+  const {state, dispatch} = useTheme()
+
+  console.log(state)
 
   return (
     <div>Hello world
-      <button className={theme}
+      <button className={''}
       onClick={() => {
-        setTheme(theme === 'light' ? 'dark' : 'light')
+        dispatch({type: state.theme == 'light' ? 'dark' : 'light'})
       }}>
         Toggle theme
       </button>
